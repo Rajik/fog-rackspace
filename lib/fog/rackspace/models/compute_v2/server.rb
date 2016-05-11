@@ -270,6 +270,7 @@ module Fog
           modified_options[:boot_volume_id] ||= attributes[:boot_volume_id]
           modified_options[:boot_image_id] ||= attributes[:boot_image_id]
           modified_options[:boot_volume_size] ||= attributes[:boot_volume_size]
+          modified_options[:os_scheduler_hints] ||= attributes[:os_scheduler_hints]
 
           if modified_options[:networks]
             modified_options[:networks].map! { |id| { :uuid => id } }

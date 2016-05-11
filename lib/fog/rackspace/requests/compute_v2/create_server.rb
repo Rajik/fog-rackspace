@@ -69,6 +69,7 @@ module Fog
           data['server']['personality'] = options[:personality] unless options[:personality].nil?
           data['server']['config_drive'] = options[:config_drive] unless options[:config_drive].nil?
           data['server']['user_data'] = options[:user_data] unless options[:user_data].nil?
+          data['os_scheduler_hints'] = options[:os_scheduler_hints] unless options[:os_scheduler_hints].nil?
           data['server']['networks'] = options[:networks] || [
             { :uuid => '00000000-0000-0000-0000-000000000000' },
             { :uuid => '11111111-1111-1111-1111-111111111111' }
